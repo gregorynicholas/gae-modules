@@ -53,10 +53,14 @@ handlers:
 
 # HTML pages
 
+- url: /test
+  script: main.application
+
 - url: /(.+\.html)
   static_files: \1
   upload: (.+\.html)
   expiration: "10m"
+  application_readable: True
   http_headers:
     # Force Internet Explorer to render pages in the highest available
     # mode in the various cases when it may not.
@@ -76,3 +80,9 @@ handlers:
   http_headers:
     X-UA-Compatible: "IE=edge"
     #Content-Security-Policy: "script-src 'self'; object-src 'self'"
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
