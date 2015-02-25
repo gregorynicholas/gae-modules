@@ -60,7 +60,6 @@ handlers:
   static_files: \1
   upload: (.+\.html)
   expiration: "10m"
-  application_readable: True
   http_headers:
     # Force Internet Explorer to render pages in the highest available
     # mode in the various cases when it may not.
