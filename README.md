@@ -8,11 +8,16 @@ For demo purposes, the following demo apps are used:
 * /modules/site - [Web Starter Kit](https://developers.google.com/web/starter-kit/)
 * /modules/api - Simple flask-based API based on this [article](http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
 
-You can see the app deployed here:
+## Installation
+
+* For /modules/site and /modules/admin follow the setup guide in the [docs/install.md](modules/site/docs/install.md)
+* For /modules/api run the [install.sh](modules/api/install.sh)
+
+## You can see the app deployed here:
 
 * Site module (default): [http://lofty-apex-852.appspot.com/](http://lofty-apex-852.appspot.com/)
 * Admin module: [http://admin.lofty-apex-852.appspot.com/](http://admin.lofty-apex-852.appspot.com/)
-* API module: [http://api.lofty-apex-852.appspot.com/](http://api.lofty-apex-852.appspot.com/)
+* API module: [http://api.lofty-apex-852.appspot.com/todo/api/v1.0/tasks](http://api.lofty-apex-852.appspot.com/todo/api/v1.0/tasks)
 
 ### Considerations
 
