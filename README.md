@@ -22,7 +22,7 @@ For demo purposes, the following demo apps are used:
 ### Considerations
 
 * When you have multiple app engines/repos it is easy to determine which "modules" have changes that need to be deployed.  Once you collapse all of the applications into a single app engine it becomes _harder_ to determine which modules to deploy.  Either you are deploying all of the applications as a set to ensure they are compatible or you need to inspect commits against a directory tree to determine which modules should be deployed.
-* Since the local appserver does not support host-based routing, the local dev server behaves differently than the deployed version.  In order work locally and use some type of hostname rather than localhost:port one would need to route local requests that match a host name to the localhost port that each module is running on.  Something like [this] could be used.
+* Since the local appserver does not support host-based routing, the local dev server behaves differently than the deployed version.  See [Routing in the development server](https://cloud.google.com/appengine/docs/python/modules/routing#Python_Routing_in_the_development_server) for more information.  In order work locally and use some type of hostname rather than localhost:port one would need to route local requests that match a host name to the localhost port that each module is running on.  Something like [this] could be used.
 * Need to validate configuration with custom domain and wildcard SSL cert
 
 
